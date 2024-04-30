@@ -2,7 +2,7 @@ from openai import OpenAI
 from tqdm import tqdm
 import os
 
-key = "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"
+key = ""
 client = OpenAI(api_key=key)
 
 prompts = [
