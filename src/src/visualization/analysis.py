@@ -132,7 +132,7 @@ def comparative_analysis(datasets, all_data, root_path):
 
 
 def main():
-    results_dir = r"C:\Users\sudhe\Projects\DSA\dsa_python\results"
+    results_dir = r"results"
     datasets = []
     files = os.listdir(results_dir)
     for i, file in enumerate(files):
@@ -140,11 +140,11 @@ def main():
         df['Accepted'] = df.apply(is_accepted, axis=1)
         datasets.append(df)
 
-        save_files_path = os.path.join(r"C:\Users\sudhe\Projects\DSA\dsa_python\figures", str(i+1))
+        save_files_path = os.path.join(r"results", str(i+1))
         get_charts(df, save_files_path)
 
     # Concatenate all datasets for analysis
-    comparative_path = r"C:\Users\sudhe\Projects\DSA\dsa_python\figures"
+    comparative_path = r"results"
     all_data = pd.concat(datasets, ignore_index=True)
     comparative_analysis(datasets, all_data, comparative_path)
 
