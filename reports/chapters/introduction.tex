@@ -32,19 +32,63 @@
 
 
 
-The proficiency of Large Language Models (LLMs) like ChatGPT in generating working code is intrinsically linked to their understanding and application of data structures and algorithms (DSA). These fundamental components form the backbone of efficient and effective software development. DSA are critical in determining how data is organized, stored, and manipulated within a program, impacting everything from the execution speed to resource utilization. The ability of an AI model to adeptly handle these aspects is indicative of its depth in coding knowledge and its applicability in real-world software development scenarios.
+The proficiency of Large Language Models (LLMs) like ChatGPT in generating working code is 
+intrinsically linked to their understanding and application of data structures and algorithms 
+(DSA). These fundamental components form the backbone of efficient and effective software 
+development. DSA are critical in determining how data is organized, stored, and manipulated 
+within a program, impacting everything from the execution speed to resource utilization. The 
+ability of an AI model to adeptly handle these aspects is indicative of its depth in coding 
+knowledge and its applicability in real-world software development scenarios.
 
-In this context, the capabilities of ChatGPT in DSA are particularly noteworthy. This model has demonstrated a remarkable ability to not only understand and implement standard data structures and algorithms but also to apply them creatively to solve complex problems. The implication of this proficiency is significant; it suggests that LLMs like ChatGPT can be invaluable tools in the software development process, assisting in everything from initial problem analysis to the formulation of efficient algorithmic solutions.
+In this context, the capabilities of ChatGPT in DSA are particularly noteworthy. This model has 
+demonstrated a remarkable ability to not only understand and implement standard data structures 
+and algorithms but also to apply them creatively to solve complex problems. The implication of 
+this proficiency is significant; it suggests that LLMs like ChatGPT can be invaluable tools in 
+the software development process, assisting in everything from initial problem analysis to the 
+formulation of efficient algorithmic solutions.
 
-Furthermore, the application of DSA in code generation by LLMs also opens up possibilities for more advanced software development applications. For instance, an AI model proficient in DSA can potentially assist in optimizing existing codebases, refactoring inefficient structures, or even suggesting algorithmic improvements. 
+Furthermore, the application of DSA in code generation by LLMs also opens up possibilities for 
+more advanced software development applications. For instance, an AI model proficient in DSA 
+can potentially assist in optimizing existing codebases, refactoring inefficient structures, or 
+even suggesting algorithmic improvements. 
 
-In the current landscape of AI-driven code generation, particularly with models like ChatGPT, there is a noticeable challenge in consistently generating code that is both efficient and correct. The generation of correct code is fundamental, as errors in code can lead to significant issues in software development, ranging from minor bugs to critical system failures. While ChatGPT exhibits a strong capacity for code generation especially in DSA, as evidenced in the work by \cite{arefin2023unmasking}, its performance can vary, especially in terms of efficiency and adherence to best practices in DSA. This variability underscores the necessity for more refined techniques in interacting with these models to elicit the highest quality of code output.
+In the current landscape of AI-driven code generation, particularly with models like ChatGPT, 
+there is a noticeable challenge in consistently generating code that is both efficient and 
+correct. The generation of correct code is fundamental, as errors in code can lead to 
+significant issues in software development, ranging from minor bugs to critical system 
+failures. While ChatGPT exhibits a strong capacity for code generation especially in DSA, as 
+evidenced in the work by \cite{arefin2023unmasking}, its performance can vary, especially in 
+terms of efficiency and adherence to best practices in DSA. This variability underscores the 
+necessity for more refined techniques in interacting with these models to elicit the highest 
+quality of code output.
 
-Prompt engineering emerges as a crucial element in this context. It plays a critical role in harnessing their full potential, especially in code generation. It involves meticulously crafting input prompts to effectively communicate the requirements and constraints of a given problem to the AI model. This practice is particularly essential in programming scenarios where the quality of output is directly influenced by how the problem is presented to the model, i.e., the clarity and specificity of instructions can significantly influence the accuracy and utility of the generated code. A well-engineered prompt can lead to solutions that are not only syntactically and logically correct but also optimized in terms of performance and resource management. The significance of prompt design in obtaining optimal results from generative tasks has been highlighted in the research by \cite{chen2021evaluating} on GPT models.
+Prompt engineering emerges as a crucial element in this context. It plays a critical role in 
+harnessing their full potential, especially in code generation. It involves meticulously 
+crafting input prompts to effectively communicate the requirements and constraints of a given 
+problem to the AI model. This practice is particularly essential in programming scenarios where 
+the quality of output is directly influenced by how the problem is presented to the model, 
+i.e., the clarity and specificity of instructions can significantly influence the accuracy and 
+utility of the generated code. A well-engineered prompt can lead to solutions that are not only 
+syntactically and logically correct but also optimized in terms of performance and resource 
+management. The significance of prompt design in obtaining optimal results from generative 
+tasks has been highlighted in the research by \cite{chen2021evaluating} on GPT models.
 
-The implications of a system proficient in accurately generating working, logical code are far-reaching. In the future, such capabilities could revolutionize software development, enabling faster deployment of robust and sophisticated applications. Furthermore, as noted by Chen et al. (2021) in their analysis of code generation models, these advancements could democratize programming, allowing individuals with limited coding expertise to develop software solutions through intuitive, natural language instructions. This could potentially lead to a surge in innovation, as barriers to software creation are lowered, and a broader range of perspectives are brought into the technology development process.
+The implications of a system proficient in accurately generating working, logical code are far-
+reaching. In the future, such capabilities could revolutionize software development, enabling 
+faster deployment of robust and sophisticated applications. Furthermore, as noted by \cite{chen2021evaluating} in their analysis of code generation models, these advancements could democratize 
+programming, allowing individuals with limited coding expertise to develop software solutions 
+through intuitive, natural language instructions. This could potentially lead to a surge in 
+innovation, as barriers to software creation are lowered, and a broader range of perspectives 
+are brought into the technology development process.
 
-The current research aims to delve deeper into ChatGPT’s capabilities in DSA. It aims to assess and quantify the impact of prompt engineering on ChatGPT’s performance in generating algorithmic solutions. By evaluating the model’s performance in this domain, the study seeks to shed light on the extent to which ChatGPT can accurately and effectively generate code solutions that are not just correct in their logic, but also optimal in their use of data structures and algorithms. This exploration is pivotal, as it directly relates to the practical utility of LLMs in software engineering, a field where efficiency and optimization are paramount.
+The current research aims to delve deeper into ChatGPT’s capabilities in DSA. It aims to assess 
+and quantify the impact of prompt engineering on ChatGPT’s performance in generating 
+algorithmic solutions. By evaluating the model’s performance in this domain, the study seeks to 
+shed light on the extent to which ChatGPT can accurately and effectively generate code 
+solutions that are not just correct in their logic, but also optimal in their use of data 
+structures and algorithms. This exploration is pivotal, as it directly relates to the practical 
+utility of LLMs in software engineering, a field where efficiency and optimization are 
+paramount.
 
 
 
@@ -53,11 +97,31 @@ The current research aims to delve deeper into ChatGPT’s capabilities in DSA. 
 \section{Problem statement}
 \label{sec:intro_prob_art}
 % This section describes the investigated problem in detail. You can also have a separate chapter on ``Problem articulation.''  For some projects, you may have a section like ``Research question(s)'' or ``Research Hypothesis'' instead of a section on ``Problem statement.'
-The central problem this study addresses is the assessment of the impact of prompt engineering on the performance of ChatGPT, specifically in solving undergraduate-level data structures and algorithms (DSA) questions. The effectiveness of Large Language Models (LLMs) like ChatGPT in code generation has been increasingly recognized. However, their ability to consistently produce efficient and correct solutions in the context of complex DSA problems remains an area requiring deeper exploration. This research hypothesizes that through strategic prompt engineering, the proficiency of ChatGPT in generating accurate and optimized solutions to DSA challenges can be significantly enhanced.
+The central problem this study addresses is the assessment of the impact of prompt engineering 
+on the performance of ChatGPT, specifically in solving undergraduate-level data structures and 
+algorithms (DSA) questions. The effectiveness of Large Language Models (LLMs) like ChatGPT in 
+code generation has been increasingly recognized. However, their ability to consistently 
+produce efficient and correct solutions in the context of complex DSA problems remains an area 
+requiring deeper exploration. This research hypothesizes that through strategic prompt 
+engineering, the proficiency of ChatGPT in generating accurate and optimized solutions to DSA 
+challenges can be significantly enhanced.
 
-Prompt engineering, in this context, refers to the deliberate design and structuring of input prompts to guide ChatGPT in understanding and effectively responding to the intricacies of DSA problems. The hypothesis is grounded in the premise that the manner in which a problem is presented to an LLM can profoundly influence the quality of the generated solution. This hypothesis aligns with the findings of \cite{radford2019language}, who highlighted the importance of prompt design in achieving desired outcomes from generative AI models. The study aims to empirically test this hypothesis by systematically varying the prompts used to interact with ChatGPT and evaluating the resulting code's correctness, efficiency, and adherence to DSA best practices.
+Prompt engineering, in this context, refers to the deliberate design and structuring of input 
+prompts to guide ChatGPT in understanding and effectively responding to the intricacies of DSA 
+problems. The hypothesis is grounded in the premise that the manner in which a problem is 
+presented to an LLM can profoundly influence the quality of the generated solution. This 
+hypothesis aligns with the findings of \cite{radford2019language}, who highlighted the 
+importance of prompt design in achieving desired outcomes from generative AI models. The study 
+aims to empirically test this hypothesis by systematically varying the prompts used to interact 
+with ChatGPT and evaluating the resulting code's correctness, efficiency, and adherence to DSA 
+best practices.
 
-The significance of this investigation lies not only in its potential to enhance the understanding of prompt engineering as a tool for optimizing LLM performance but also in its broader implications for the field of AI-driven software development. By establishing a clear correlation between prompt engineering and the quality of ChatGPT-generated code, the study seeks to contribute to the development of more effective methodologies for leveraging LLMs in technical and educational settings.
+The significance of this investigation lies not only in its potential to enhance the 
+understanding of prompt engineering as a tool for optimizing LLM performance but also in its 
+broader implications for the field of AI-driven software development. By establishing a clear 
+correlation between prompt engineering and the quality of ChatGPT-generated code, the study 
+seeks to contribute to the development of more effective methodologies for leveraging LLMs in 
+technical and educational settings.
 
 
 
@@ -69,17 +133,37 @@ The significance of this investigation lies not only in its potential to enhance
 % \textbf{Aims:} The aims tell a read what you want/hope to achieve at the end of the project. The  aims define your intent/purpose in general terms.  
 
 % \textbf{Objectives:} The objectives are a set of tasks you would perform in order to achieve the defined aims. The objective statements have to be specific and measurable through the results and outcome of the project.
-The overarching aim of this project is to conduct a comprehensive evaluation of ChatGPT's capabilities in solving data structures and algorithms problems typically encountered at the undergraduate level. This aim encompasses several specific objectives:
+The overarching aim of this project is to conduct a comprehensive evaluation of ChatGPT's 
+capabilities in solving data structures and algorithms problems typically encountered at the 
+undergraduate level. This aim encompasses several specific objectives:
 
-\textbf{Development of Tailored Prompts}: One of the primary objectives is to develop tailored prompts that enhance ChatGPT’s problem-solving skills in data structures and algorithms. This involves designing prompts that not only accurately describe the problem but also guide the model towards optimal problem-solving approaches. The effectiveness of these prompts will be gauged by their ability to elicit accurate, efficient, and sophisticated solutions from ChatGPT.
+\textbf{Development of Tailored Prompts}: One of the primary objectives is to develop tailored 
+prompts that enhance ChatGPT’s problem-solving skills in data structures and algorithms. This 
+involves designing prompts that not only accurately describe the problem but also guide the 
+model towards optimal problem-solving approaches. The effectiveness of these prompts will be 
+gauged by their ability to elicit accurate, efficient, and sophisticated solutions from ChatGPT.
 
-\textbf{Curating a Comprehensive Standard Test Set}: The project will involve curating a comprehensive set of standard undergraduate-level questions in data structures and algorithms. The selected test set for this research includes the Leetcode 75, Blind 75 Leetcode questions, and top interview 150 Leetcode questions. These questions are chosen for their relevance, diversity, and the depth they provide in covering key concepts within the field.
+\textbf{Curating a Comprehensive Standard Test Set}: The project will involve curating a 
+comprehensive set of standard undergraduate-level questions in data structures and algorithms. 
+The selected test set for this research includes a combination of Easy, Medium and Hard questions which reflect a standard DSA question set an undergraduate student might encounter in a real world scenario.
 
-\textbf{Automation of the Evaluation Process}: Automating the evaluation of ChatGPT’s responses is another critical objective. This will be achieved by integrating ChatGPT with the LeetCode API, allowing for an efficient and systematic assessment of the solutions' correctness and practical applicability. Automation will ensure consistency in evaluation and enable the handling of a large volume of test cases.
+\textbf{Automation of the Evaluation Process}: Automating the evaluation of ChatGPT’s responses 
+is another critical objective. This will be achieved by integrating ChatGPT with the LeetCode 
+API (graphql), allowing for an efficient and systematic assessment of the solutions' correctness and 
+practical applicability. Automation will ensure consistency in evaluation and enable the 
+handling of a large volume of test cases.
 
-\textbf{Comparison of Effectiveness}: The project aims to compare the effectiveness of ChatGPT's responses with and without prompt engineering. This comparative analysis will help ascertain the impact of prompt engineering on the model's performance. It will involve analyzing the solutions generated by ChatGPT under different prompting conditions to evaluate how variations in prompt design influence the accuracy and quality of the generated code.
+\textbf{Comparison of Effectiveness}: The project aims to compare the effectiveness of 
+ChatGPT's responses with and without prompt engineering. This comparative analysis will help 
+ascertain the impact of prompt engineering on the model's performance. It will involve 
+analyzing the solutions generated by ChatGPT under different prompting conditions to evaluate 
+how variations in prompt design influence the accuracy and quality of the generated code.
 
-Through these objectives, the project seeks to provide a detailed analysis of how effectively ChatGPT can be utilized in the domain of data structures and algorithms, and the extent to which prompt engineering can enhance its performance. The results are expected to offer valuable insights into the practical applications of LLMs in technical education and software development.
+Through these objectives, the project seeks to provide a detailed analysis of how effectively 
+ChatGPT can be utilized in the domain of data structures and algorithms, and the extent to 
+which prompt engineering can enhance its performance. The results are expected to offer 
+valuable insights into the practical applications of LLMs in technical education and software 
+development.
 
 
 
@@ -95,42 +179,96 @@ Through these objectives, the project seeks to provide a detailed analysis of ho
 % Briefly describe the solution approach and the methodology applied in solving the set aims and objectives.
 
 % Depending on the project, you may like to alter the ``heading'' of this section. Check with you supervisor. Also, check what subsection or any other section that can be added in or removed from this template.
-The methodology of this project is structured around a blend of prompt engineering and automated evaluation techniques, designed to rigorously test ChatGPT's proficiency in solving data structures and algorithms problems.
+The methodology of this project is structured around a blend of prompt engineering and 
+automated evaluation techniques, designed to rigorously test ChatGPT's proficiency in solving 
+data structures and algorithms problems.
 
-By employing these methodical and automated approaches outlined below, the study aims to provide a detailed analysis of ChatGPT's problem-solving abilities in the context of data structures and algorithms. The findings are expected to offer significant insights into the potential of LLMs in technical education and software development, particularly in the realm of algorithmic thinking and coding proficiency.
+By employing these methodical and automated approaches outlined below, the study aims to 
+provide a detailed analysis of ChatGPT's problem-solving abilities in the context of data 
+structures and algorithms. The findings are expected to offer significant insights into the 
+potential of LLMs in technical education and software development, particularly in the realm of 
+algorithmic thinking and coding proficiency.
 
 \subsection{Automated System Development and Integration}
-\label{sec:intro_some_sub1}
+\label{sec:Leetcode}
 % You may or may not need subsections here. Depending on your project's needs, add two or more subsection(s). A section takes at least two subsections. 
-A key component of our methodology involves developing an automated system that interfaces with both the ChatGPT and LeetCode APIs. This system will automatically fetch questions from LeetCode (Leetcode 75, Blind 75 Leetcode questions, and top interview 150 Leetcode questions), using a combination of the LeetCode Rust API and web scraping methods. These questions, representative of common undergraduate-level data structures and algorithms challenges, form the basis of our evaluation set.
+A key component of our methodology involves developing an automated system that interfaces with 
+both the ChatGPT and LeetCode APIs. This system will automatically fetch questions from 
+LeetCode, using graphql API behind leetcode.com. These questions, 
+representative of common undergraduate-level data structures and algorithms challenges, form 
+the basis of our evaluation set.
 
 \subsection{Solution Generation and Submission}
 \label{sec:intro_some_sub2}
 % Depending on your project's needs, add more section(s) and subsection(s).
-Once a question is fetched, it is passed to the ChatGPT API to generate a solution. This process is repeated multiple times for each question, with each iteration using a different set of prompts. These prompts are strategically designed to guide ChatGPT towards generating more effective solutions. Each generated solution is then submitted back to LeetCode through its API, enabling us to assess its correctness and efficiency.
+Once a question is fetched, it is passed to the ChatGPT API to generate a solution. This 
+process is repeated multiple times for each question, with each iteration using a different set 
+of prompts. These prompts are strategically designed to guide ChatGPT towards generating more 
+effective solutions. Each generated solution is then submitted back to LeetCode through its 
+API, enabling us to assess its correctness and efficiency.
 
 \subsection{Evaluation Metrics}
 \label{sec:intro_some_subsub1}
 % The command \textbackslash subsubsection\{\} creates a paragraph heading in \LaTeX.
-The primary metrics for evaluating each solution are the number of test cases passed and the run time. The number of test cases passed is a direct indicator of the solution's correctness, reflecting how well the code meets the problem's requirements. The run time, on the other hand, provides insight into the efficiency and optimization of the solution. Together, these metrics are critical for evaluating the effectiveness of different prompts and the overall capability of ChatGPT in solving complex DSA questions.
+The primary metrics for evaluating each solution are the number of test cases passed and the 
+run time. The number of test cases passed is a direct indicator of the solution's correctness, 
+reflecting how well the code meets the problem's requirements. The run time, on the other hand, 
+provides insight into the efficiency and optimization of the solution. Together, these metrics 
+are critical for evaluating the effectiveness of different prompts and the overall capability 
+of ChatGPT in solving complex DSA questions.
 
-\subsection{ Comprehensive Testing Across Standard Test Questions}
+\subsection{Comprehensive Testing Across Standard Test Questions}
 \label{sec:intro_some_subsub2}
 % Write your text here...
-This entire process, from question retrieval to solution evaluation, is systematically repeated for all the standard test questions outlined in the Aims \& Objectives section. This comprehensive approach ensures a thorough assessment of ChatGPT’s capabilities and the impact of various prompt engineering strategies on its performance.
+This entire process, from question retrieval to solution evaluation, is systematically repeated 
+for all the standard test questions outlined in the Aims \& Objectives section. This 
+comprehensive approach ensures a thorough assessment of ChatGPT’s capabilities and the impact 
+of various prompt engineering strategies on its performance.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Summary of contributions and achievements} %  use this section 
-\label{sec:intro_sum_results} % label of summary of results
-Describe clearly what you have done/created/achieved and what the major results and their implications are. 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Summary of contributions and achievements} %  use this section 
+% \label{sec:intro_sum_results} % label of summary of results
+% Describe clearly what you have done/created/achieved and what the major results and their implications are. 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Organization of the report} %  use this section
-\label{sec:intro_org} % label of Org section
-Describe the outline of the rest of the report here. Let the reader know what to expect ahead in the report. Describe how you have organized your report. 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Organization of the report} %  use this section
+% \label{sec:intro_org} % label of Org section
+% Describe the outline of the rest of the report here. Let the reader know what to expect ahead 
+% in the report. Describe how you have organized your report. 
 
-\textbf{Example: how to refer a chapter, section, subsection}. This report is organised into seven chapters. Chapter~\ref{ch:lit_rev} details the literature review of this project. In Section~\ref{ch:method}...  % and so on.
+% \textbf{Example: how to refer a chapter, section, subsection}. This report is organised into seven chapters. Chapter~\ref{ch:lit_rev} details the literature review of this project. In Section~\ref{ch:method}...  % and so on.
 
-\textbf{Note:}  Take care of the word like ``Chapter,'' ``Section,'' ``Figure'' etc. before the \LaTeX command \textbackslash ref\{\}. Otherwise, a  sentence will be confusing. For example, In \ref{ch:lit_rev} literature review is described. In this sentence, the word ``Chapter'' is missing. Therefore, a reader would not know whether 2 is for a Chapter or a Section or a Figure.
+% \textbf{Note:}  Take care of the word like ``Chapter,'' ``Section,'' ``Figure'' etc. before the \LaTeX command \textbackslash ref\{\}. Otherwise, a  sentence will be confusing. For example, 
+% In \ref{ch:lit_rev} literature review is described. In this sentence, the word ``Chapter'' is 
+% missing. Therefore, a reader would not know whether 2 is for a Chapter or a Section or a Figure.
+
+\section{Summary of Contributions and Achievements}
+\label{sec:intro_sum_results}
+This project has achieved significant milestones in evaluating the capabilities of ChatGPT in solving complex data structures and algorithms (DSA) problems through an automated testing framework. Major contributions of this work include:
+
+\begin{itemize}
+    \item \textbf{Development of an Automated System:} A fully automated pipeline was created for fetching coding problems, generating solutions using ChatGPT, and evaluating these solutions against standardized test cases. This system is scalable and can be adapted for broader AI testing applications.
+    \item \textbf{Role-Based Prompt Engineering:} This work extensively explored how different prompts influence the performance of ChatGPT. Through careful design of role-based prompts, it was possible to direct the AI to approach problems with varying strategies, significantly affecting the quality of the solutions generated.
+    \item \textbf{Comprehensive Testing and Analysis:} A vast array of DSA problems was used to test the model, providing a deep insight into its strengths and weaknesses across different topics. The findings reveal that while ChatGPT excels in areas requiring mathematical reasoning, it struggles with tasks that need complex data structure manipulation.
+    \item \textbf{Identification of Key Patterns:} The project identified critical patterns in errors and solution quality, which can help refine the AI model's training and prompt engineering for improved performance.
+\end{itemize}
+
+The implications of these results are vast, providing a foundation for future research in AI-driven coding solutions and enhancing the understanding of how language models can be effectively utilized in programming education and professional software development.
+
+\section{Organization of the Report}
+\label{sec:intro_org}
+This report is organized into seven main chapters, each dedicated to a different aspect of the research, ensuring a logical flow and comprehensive understanding of the project.
+
+\begin{itemize}
+    \item \textbf{Chapter~\ref{ch:into}: Introduction} - This chapter sets the stage for the report, outlining the research problem, objectives, and the scope of the study.
+    \item \textbf{Chapter~\ref{ch:lit_rev}: Literature Review} - Details the existing research on AI capabilities in coding, specifically focusing on the performance of language models like ChatGPT in technical domains.
+    \item \textbf{Chapter~\ref{ch:method}: Methodology} - Describes the methods used for data collection, prompt engineering, solution generation and submission, and the automated system development and integration.
+    \item \textbf{Chapter~\ref{ch:results}: Results} - Presents the findings from the extensive testing of ChatGPT, analyzing its performance across various prompts and topics.
+    \item \textbf{Chapter~\ref{ch:discussion}: Discussion and Analysis} - Discusses the implications of the results, the effectiveness of different prompts, and the model's performance on various DSA topics.
+    \item \textbf{Chapter~\ref{ch:conclusions}: Conclusions and Future Work} - Summarizes the key findings and discusses potential areas for future research.
+    \item \textbf{Chapter~\ref{ch:reflection}: Reflection} - Provides a personal account of the research experience, reflecting on the learning and challenges encountered during the project.
+\end{itemize}
+
+Appendices and additional supporting material can be found at the end of the report, providing further details on data and methodologies used throughout the research.
 

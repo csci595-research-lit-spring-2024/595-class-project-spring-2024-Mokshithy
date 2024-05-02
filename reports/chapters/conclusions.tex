@@ -1,17 +1,57 @@
+% \chapter{Conclusions and Future Work}
+% \label{ch:con}
+% \section{Conclusions}
+% Typically a conclusions chapter first summarizes the investigated problem and its aims and objectives. It summaries the critical/significant/major findings/results about the aims and objectives that have been obtained by applying the key methods/implementations/experiment set-ups. A conclusions chapter draws a picture/outline of your project's central and the most signification contributions and achievements. 
+
+% A good conclusions summary could be approximately 300--500 words long, but this is just a recommendation.
+
+% A conclusions chapter followed by an abstract is the last things you write in your project report.
+
+% \section{Future work}
+% This section should refer to Chapter~\ref{ch:results} where the author has reflected their criticality about their own solution. The future work is then sensibly proposed in this section.
+
+% \textbf{Guidance on writing future work:} While working on a project, you gain experience and learn the potential of your project and its future works. Discuss the future work of the project in technical terms. This has to be based on what has not been yet achieved in comparison to what you had initially planned and what you have learned from the project. Describe to a reader what future work(s) can be started from the things you have completed. This includes identifying what has not been achieved and what could be achieved. 
+
+
+
+% A good future work summary could be approximately 300--500 words long, but this is just a recommendation.
+
+
 \chapter{Conclusions and Future Work}
-\label{ch:con}
+\label{ch:conclusions}
+
 \section{Conclusions}
-Typically a conclusions chapter first summarizes the investigated problem and its aims and objectives. It summaries the critical/significant/major findings/results about the aims and objectives that have been obtained by applying the key methods/implementations/experiment set-ups. A conclusions chapter draws a picture/outline of your project's central and the most signification contributions and achievements. 
+This thesis has systematically investigated the performance of ChatGPT 3.5 Turbo, an advanced language model developed by OpenAI, in addressing complex data structures and algorithms (DSA) problems. Over the course of this study, a diverse array of problems categorized by varying levels of difficulty was approached using role-based prompts, specifically designed to probe the model's ability to adapt and respond to nuanced programming tasks.
 
-A good conclusions summary could be approximately 300--500 words long, but this is just a recommendation.
+The experimentation was rooted in a set of role-based prompts, each tailored with specific keywords and structured to simulate different programming expertise levels—from a junior programmer to an expert in Python programming. The analysis revealed a significant correlation between the effectiveness of these prompts and the performance outcomes, with prompts that emphasized "efficiency" and advanced programming expertise consistently yielding higher acceptance rates. Such findings demonstrate the profound impact that targeted prompt engineering can have on the operational effectiveness of language models like ChatGPT.
 
-A conclusions chapter followed by an abstract is the last things you write in your project report.
+Interestingly, the study uncovered that while ChatGPT demonstrates exceptional strength in solving problems that require strong mathematical reasoning and advanced pattern recognition, it faces notable challenges when tasked with problems that demand a deep understanding of complex data structures and the manipulation of spatial relationships. This suggests a potential limitation in its current training, which seems less equipped to handle tasks that go beyond text-based reasoning to require a conceptual grasp of spatial and structural dynamics.
 
-\section{Future work}
-This section should refer to Chapter~\ref{ch:results} where the author has reflected their criticality about their own solution. The future work is then sensibly proposed in this section.
+Moreover, this research has not only highlighted the specific strengths and weaknesses of ChatGPT in the realm of programming and problem-solving but has also set a precedent for the use of automated pipelines in evaluating AI models. The automated pipeline developed for this study enables seamless, efficient testing of a large number of problems across various difficulty settings without manual intervention. This system is instrumental in scaling the analysis to accommodate a wider range of prompts and scenarios, making it a valuable tool for future research.
 
-\textbf{Guidance on writing future work:} While working on a project, you gain experience and learn the potential of your project and its future works. Discuss the future work of the project in technical terms. This has to be based on what has not been yet achieved in comparison to what you had initially planned and what you have learned from the project. Describe to a reader what future work(s) can be started from the things you have completed. This includes identifying what has not been achieved and what could be achieved. 
+The flexibility and scalability provided by the automated pipeline pave the way for conducting similar analyses on different large language models (LLMs) without the need for extensive manual setup. This capability is crucial for comparative studies that aim to benchmark the performance of various AI models under identical conditions, thereby providing a clearer picture of their relative strengths and limitations in technical domains.
+
+In summary, the work presented in this thesis underscores the nuanced interplay between prompt design and AI performance, emphasizing the importance of precise and thoughtful prompt engineering in extracting the maximum potential from AI capabilities. The findings from this study not only contribute to the ongoing discourse on the application of AI in coding and programming challenges but also provide a framework for future explorations aimed at enhancing the robustness and versatility of AI solutions in software development and beyond.
+
+
+\section{Future Work}
+Reflecting on the findings and limitations of this study, several areas for future research have been identified to extend and enhance the utility of language models like ChatGPT in solving complex problems:
+
+\begin{enumerate}
+    \item \textbf{Expanded Prompt Testing:} Further testing with a broader array of prompts, especially those that might explicitly guide the model through complex data structure manipulations, could provide deeper insights into enhancing model performance. This could involve exploring more nuanced and varied prompt structures to better engage the model's capabilities.
+    
+    \item \textbf{Increased Data Diversity:} Utilizing a larger and more varied dataset could help in generalizing the findings of this study and exploring the scalability of the proposed solutions. This would involve incorporating a wider range of problem types and complexities to robustly test the model's adaptability and accuracy.
+    
+    \item \textbf{Alternative Language Models:} Experimenting with different language models or newer versions of ChatGPT could reveal improvements or variations in performance across different AI architectures. This includes testing models that have been trained with different datasets or optimized for specific types of tasks.
+    
+    \item \textbf{Integration of Visual or Spatial Data Representation Techniques:} For problems involving spatial relationships, integrating visual aids or spatial data representations might help overcome some of the current limitations. This could involve using diagrams or other visual inputs to aid the model in understanding and solving spatially-related problems.
+    
+    \item \textbf{Granular Analysis of Error Types:} Identifying specific categories of errors and their causes could lead to more targeted improvements in model training and prompt design. This analysis would help in refining the prompts or training methods to minimize errors and enhance the model's problem-solving accuracy.
+    
+    \item \textbf{Limitations Due to API Constraints:} The OpenAI API currently limits the number of questions to 540 per prompt, which constrains the volume of data that can be processed in a single batch. This limitation could impact the comprehensiveness of testing and benchmarking efforts. Future work could explore ways to manage or circumvent these limitations, perhaps by varying prompts or partitioning datasets to allow more exhaustive testing.
+\end{enumerate}
+
+These directions not only aim to address the gaps identified through this research but also to leverage emerging technologies and methodologies to further the capabilities of AI in programming and problem-solving contexts.
 
 
 
-A good future work summary could be approximately 300--500 words long, but this is just a recommendation.
